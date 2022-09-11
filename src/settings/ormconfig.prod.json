@@ -1,0 +1,28 @@
+{
+   "type": "postgres",
+   "host": "",
+   "port": 5432,
+   "username": "",
+   "password": "",
+   "database": "",
+   "ssl": {
+      "rejectUnauthorized": false,
+      "ca": "rds-combined-ca-bundle.pem"
+   },
+   "synchronize": false,
+   "logging": false,
+   "entities": [
+      "src/entity/**/*.ts"
+   ],
+   "migrations": [
+      "src/migration/**/*.ts"
+   ],
+   "subscribers": [
+      "src/subscriber/**/*.ts"
+   ],
+   "cli": {
+      "entitiesDir": "src/entity",
+      "migrationsDir": "src/migration",
+      "subscribersDir": "src/subscriber"
+   }
+}
